@@ -1,0 +1,981 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background:
+        linear-gradient(180deg, 
+        rgba(255, 255, 255, 0.15) 0%, 
+        rgba(18, 18, 28, 0.00) 41.37%, 
+        rgba(38, 38, 58, 0.13) 87.31%, 
+        rgba(43, 43, 67, 0.15) 100%), 
+        linear-gradient(180deg, 
+        rgba(0, 0, 0, 0.00) 0%, 
+        rgba(38, 38, 58, 0.17) 87.31%, 
+        rgba(43, 43, 67, 0.20) 100%), 
+         #424242;
+
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+    background-repeat: no-repeat;
+
+}
+
+.content {
+  align-self: center;
+  margin: 0;
+  width: 1440px;
+  padding: 0;
+  padding-top: 85px;
+}
+
+
+.button_text {
+  background-color: transparent;
+  border: none;
+  color: #FFF;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+}
+
+/* --------------------------------------HEADER--------------------------------------*/
+header {
+  width: 100%;
+  height: 70px;
+  position: fixed;
+}
+.header_top_box {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 66px;
+    flex-shrink: 0;
+    background: #FFF;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    float: left;
+    flex-direction: row;
+    justify-content: center;
+}
+.header_bottom_box {
+  display: flex;
+  width: 100%;
+  height: 72px;
+  flex-shrink: 0;
+  background: #6C757A;
+  box-shadow: 0px 4px 4px 0px 
+  rgba(0, 0, 0, 0.25);
+}
+.header_line {
+  width: 100%;
+  height: 4px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  background: #D9D9D9;
+  margin-top: 8px;
+}
+.logo_container {
+    align-items: center;
+    width: 50px;
+    height: 100%;
+    size-adjust: fit;
+    background-size: 50% 50%;
+    background: url(C:\Users\Admin\Desktop\burger_logo_small.png), lightgray 50% / cover no-repeat;
+    background-repeat: no-repeat; 
+    background-color: white;
+    background-position: 0px 10px;
+
+}
+
+.logo_container_fill{
+  width: 100%;
+  height: 100%;
+}
+
+/* background: url(C:\Users\Admin\Desktop\burger_logo.png), lightgray 50% / cover no-repeat; */
+
+.navigation {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+
+.navigation li {
+  margin: 0 10px;
+  transition: transform 0.2s, text-shadow 0.2s; /* Apply the transition */
+  user-select: none;
+}
+
+.navigation a {
+  text-decoration: none;
+  margin: 0 12px;
+  color: #424242;
+  font-family: 'Nunito', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.04px;
+  text-transform: uppercase;
+  user-select: none;
+  transition: transform 0.2s, text-shadow 0.2s;
+}
+
+.navigation a:hover {
+  transform: scale(1.1); /* Increase the size on hover */
+  text-shadow: 4px 4px 10px rgba(255, 165, 0, 0.8); text-shadow: 2px 2px 5px rgba(255, 165, 0, 0.5);
+}
+
+.navigation li:hover {
+  transform: scale(1.1); /* Increase the size of the list item on hover */
+}
+
+.navigation a:active {
+  color: rgb(223, 181, 102);
+  transform: scale(1.2); /* Increase the size on hover */
+  -webkit-text-stroke: 1px #424242;
+  text-shadow: 4px 4px 10px rgba(255, 165, 0, 0.8); text-shadow: 2px 2px 5px rgba(255, 165, 0, 0.5);
+}
+
+.profile_container {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    margin-right: 80px;
+
+}
+.profile_container button { 
+    text-decoration: none;
+    display: flex;
+    width: 120px;
+    height: 28px;
+    
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border: none;
+    border-radius: 8px ;
+    background: var(--yellow-button, linear-gradient(93deg, #FFB800 -47.72%, #FF8A00 136.81%));
+    box-shadow: 0px 5px 8px 0px rgba(222, 151, 0, 0.24);
+    color: var(--error-default, white);
+
+ 
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: 0.3px;
+}
+
+
+/* --------------------------------------FOOTER--------------------------------------*/
+footer {
+    width: 100%;
+    height: 220px;
+    align-items: center;
+    padding: 20px 0;
+    bottom: 0;
+}
+.footer_bottom_box {
+    width: 100%;
+    height: 180px;
+    flex-shrink: 0;
+    background: #6C757A;
+
+    float: left; 
+    margin-top: 50px;
+    bottom: 0
+}
+.footer_top_box {
+    margin-top: 17px;
+    width: 100%;
+    height: 172px;
+    flex-shrink: 0;
+    margin-bottom: 0;
+    background: #424242;
+    box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.left_container{
+  width: 30%;
+  float: left;
+  margin-left: 70px;
+  margin-top: 50px;
+  text-align: left;
+}
+.right_container{
+  width: 30%;
+  margin-right: 50px;
+  margin-top: 50px;
+  float: right;
+}
+.subscribe_button{
+border: none;
+display: flex;
+width: 328px;
+height: 44px;
+padding: 21px 24px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+flex-shrink: 0;
+border-radius: 8px;
+background: var(--yellow-button, linear-gradient(93deg, #FFB800 -47.72%, #FF8A00 136.81%));
+/* Button shadow ! */
+box-shadow: 0px 14px 32px 0px rgba(255, 178, 14, 0.29), 0px 5px 8px 0px rgba(222, 151, 0, 0.24);
+}
+.footer_text{
+  font-size: 15px;
+  color: aliceblue;
+  font-family: 'Oswald', sans-serif;
+}
+
+
+/* --------------------------------------MAIN PAGE--------------------------------------*/
+.title{
+  font-size: 32px;
+  margin-top: 10px;
+  margin-left: 100px;
+  margin-bottom: 15px;
+  color: aliceblue;
+  font-family: 'Oswald', sans-serif;
+}
+
+.main_baner{
+  width: 82%;
+  height: 300px;
+  margin-bottom: 20px;
+  margin-left: 140px;
+  border-radius: 15px;
+  background-size: cover;
+  overflow: hidden;
+  background-image: url(C:\Users\Admin\Desktop\handrawn-barbecue-elements.png);
+}
+
+/* Slider Images */
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider img {
+  width: 100%;
+  height: auto;
+}
+
+/* Slider Navigation */
+.slider-navigation {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.slider-navigation button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 20px;
+  margin: 0 5px;
+  outline: none;
+  transition: color 0.3s;
+}
+
+.slider-navigation button:hover {
+  color: #007bff; /* Change to your preferred hover color */
+}
+
+/* Active Nav Button */
+.active-slide {
+  color: #007bff; /* Change to your preferred active color */
+}
+
+
+
+
+
+
+
+.categories_container{
+  width: 1110px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 5px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 180px;
+}
+/*
+.category_box {
+  background-size: cover; 
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  margin-top: 0px;
+  width: 160px;
+  height: 102px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  border: 3px solid #EDEEF2;
+  background: var(--neutral-white, #FFF);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+*/
+.category_box {
+  background: none;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  margin-top: 0px;
+  width: 160px;
+  height: 102px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  border: 3px solid lightgrey;
+  background: var(--neutral-white, #FFF);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+
+
+/* Additional styles to make it look like a button */
+.category_box {
+  cursor: pointer; /* Change cursor to a pointer on hover */
+  transition: transform 0.2s; /* Add a transition for smooth animation */ 
+}
+
+.category_box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 0, 0, 0); /* Transparent color */
+  transition: background 0.3s; /* Add a transition for smooth effect */
+  pointer-events: none; /* Prevent the pseudo-element from blocking interactions */
+}
+
+
+/* Change button appearance on hover and click */
+.category_box:hover {
+  background: lightgrey; /* Change background color on hover */
+  color: #FFF; /* Change text color on hover */
+  border: 3px solid lightgray;
+  border-radius: 16px;
+  transform: scale(1.1); /* Scale the button to 110% on hover */
+}
+
+.category_box:hover::before {
+  border-radius: 16px;
+  background: rgba(128, 128, 128, 0.3); /* Colored layer (e.g., red with 60% opacity) */
+}
+
+
+
+.category_box:active {
+  background: orange; /* Change background color on click */
+  color: #FFF; /* Change text color on click */
+  border: 3px solid orange;
+  border-radius: 16px;
+}
+.category_box:active::before {
+  border-radius: 16px;
+  background: rgba(255, 165, 0, 0.3); /* Colored layer (e.g., red with 60% opacity) */
+}
+
+
+
+
+.image_category{
+  width: 100%;
+  height: 79px;
+  background-color: white;
+  border-radius: 16px;
+
+  size-adjust: fit;
+  background: url(C:\Users\Admin\Desktop\burger_logo.png),  lightgray 50% / cover no-repeat;
+  background-repeat: no-repeat; 
+  background-color: white;
+  background-position: 43px 10px;
+}
+
+.text_category p{
+  color: var(--neutral-gray-dark, #545563);
+  text-align: center;
+  font-family: Nunito, sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px; 
+  letter-spacing: 0.1px;
+  width: 155px;
+  margin-top: 2px;
+
+}
+
+
+
+.menu_box{
+  width: 350px;
+  height: 276px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  border: 5px solid #EDEEF2;
+  background-color: white;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+.menu_container{
+  margin-top: 20px;
+  margin-left: 197px;
+  display: flex;
+  flex-wrap: wrap;
+  /* Adjust the gap as needed */
+  justify-content: flex-start; /* Align items to the left */
+  align-items: center;
+  column-gap: 13px;
+  row-gap: 15px;
+
+}
+
+
+/*
+.menulist1{
+  width: 100%;
+  float: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 50px;
+  margin-left: 25px;
+}
+*/
+
+.menu_photo{
+  width: 350px;
+  height: 160px;
+  flex-shrink: 0;
+  background: #D9D9D9;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  background: url(C:\Users\Admin\Desktop\restaurant_food\1_1palermo-445x445.jpg), lightgray 50% / cover no-repeat;
+
+}
+
+.menu_photo img{
+max-width: 100%;
+height: auto;
+size-adjust: fit;
+}
+
+.text_menu_name{
+  margin-left: 15px;
+  margin-top: 10px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+}
+
+.text_menu_content_left{
+  float: left;
+  width: 40%;
+}
+
+.item_price{
+  margin-left: 18px;
+  font-family: 'Oswald', sans-serif;
+  margin-bottom: 15px;
+  margin-right: 20px;
+}
+
+.text_menu_content{
+  width: 100%;
+  flex-direction: row;
+  height: 80px;
+
+}
+
+.text_menu_content_right{
+  margin-top: 10px;
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: 'Oswald', sans-serif;
+  font-size: 13px;
+ }
+
+.menu_content_weight_container{
+  margin-left: 15px;
+  margin-right: 15px;
+  width: 70%;
+  height: 25px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  border: 1px solid #F17228;
+  background: #FFF;
+  flex-direction: row;
+}
+
+.text_menu_weight{
+  align-items: center;
+  text-align: center;
+  margin-top: 3px;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+.menu_quantity_container{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2px;
+  margin-top: 4px;
+}
+
+.button_menu_add {
+  width: 180px;
+  height: 30px;
+  background: #F17228;
+  border-radius: 10px;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: left;
+
+  border: none;
+  color: #FFF;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  margin-left: 5px;
+}
+
+.button_menu_add button :hover{
+  background: #F17228;
+}
+
+.menu_item_quantity{
+  width: 168px;
+height: 30px;
+flex-shrink: 0;
+border-radius: 10px;
+border: 1px solid #D9D9D9;
+background: #FFF;
+flex-direction: row;
+text-align: center;
+}
+
+.menu_item_minus{
+  border: none;
+  background: none;
+  margin-top: 2px;
+  float: left;
+  margin-left: 5px;
+}
+
+.menu_item_plus{
+  border: none;
+  background: none;
+  margin-top: 2px;
+  float: right;
+  margin-right: 5px;
+}
+
+
+/*
+.menulist2{
+  width: 100%;
+  float: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 50px;
+  margin-left: 25px;
+}
+*/
+
+
+
+/* --------------------------------------ABOUT PAGE--------------------------------------*/
+.about_container{
+  width: 100%;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  margin-left: 180px;
+}
+
+.about_item{
+margin-bottom: 15px;
+float: left;
+width: 1077px;
+height: 300px;
+flex-shrink: 0;
+border-radius: 16px;
+border: 5px solid #EDEEF2;
+background: #EDEEF2;
+box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+
+
+.service_container{
+  flex-direction: row;
+  width: 100%;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  margin-left: 180px;
+}
+
+.service_item{
+flex-direction: row;
+margin-bottom: 15px;
+float: left;
+width: 1077px;
+
+height: 260px;
+flex-shrink: 0;
+border-radius: 45px;
+flex-shrink: 0;
+border: 5px solid #EDEEF2;
+background: #EDEEF2;
+box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+
+.service_item_left{
+  float: left;
+  margin-left: 8px;
+  margin-top: 8px;
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: 'Oswald', sans-serif;
+  font-size: 13px;
+
+}
+
+.service_item_right{
+
+float: right;
+width: 500px;
+height: 260px;
+flex-shrink: 0;
+border-radius: 0px 45px 45px 0px;
+background: url(C:\Users\Admin\Desktop\slider\burger-design-template-32330edc9872179c9d7a6040a9ff6a88_screen.jpg), lightgray 50% / cover no-repeat;
+}
+
+
+
+
+
+
+/*---------REG----------*/
+
+.registration_container_left {
+  margin-top: 8px;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  margin-left: 180px;
+}
+
+.registration_input {
+width: 341px;
+height: 44px;
+flex-shrink: 0;
+border-radius: 8px;
+border: 1px solid var(--neutral-gray-light, #C7C8D2);
+background: #FFF;
+margin-bottom: 10px;
+}
+
+.registration_text{
+  font-size: 16px;
+  color: aliceblue;
+  font-family: 'Oswald', sans-serif;
+  margin-bottom: 4px;
+  font-weight: 300;
+  line-height: 16px; /* 133.333% */
+}
+
+.registration_button{
+display: inline-flex;
+padding: 8px 16px;
+align-items: center;
+gap: 8px;
+border-radius: 8px;
+border: 2px solid var(--error-default, #F17228);
+background: #FFF;
+color: var(--error-default, #F17228);
+text-align: center;
+margin-top: 2px;
+margin-bottom: 18px;
+
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 20px; /* 142.857% */
+letter-spacing: 0.3px;
+}
+
+.login_link {
+  font-size: 16px;
+  color: aliceblue;
+  font-family: 'Oswald', sans-serif;
+  margin-bottom: 4px;
+  font-weight: 300;
+  line-height: 16px; /* 133.333% */
+  text-decoration: underline;
+}
+
+
+.registration_container_right{
+  float: right;
+}
+
+.registration_container_right_burger{
+  float: right;
+  width: 848px;
+  height: 480px;
+
+flex-shrink: 0;
+background: url(C:\Users\Admin\Desktop\burger1.png);
+background-repeat: no-repeat; 
+background-color: transparent;
+}
+
+
+
+.shopcart_container{
+  height: fit-content;
+  flex-direction: row;
+  margin-left: 120px;
+  width: 100%;
+  background-color: #007bff;
+}
+
+.shopcart_container_left{
+  flex-direction: column;
+  float: left;
+  width: 40%;
+
+}
+
+.shopcart_container_right{
+  height: 220px;
+  width: 40%;
+  flex-direction: column;
+  float: right;
+  margin-right: 170px;
+ 
+}
+
+
+.shopcart_box{
+  width: 570px;
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  border: 2px solid #C7C8D2;
+  background: transparent;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  padding-top: 14px;
+  padding-left: 12px;
+  }
+  
+  
+
+.shopcart_text{
+  font-size: 16px;
+  color: aliceblue;
+  font-family: 'Oswald', sans-serif;
+  margin-bottom: 4px;
+  font-weight: 300;
+  line-height: 16px; /* 133.333% */
+}
+
+
+
+.shopcart_button{
+  display: inline-flex;
+padding: 8px 16px;
+align-items: center;
+gap: 8px;
+border-radius: 8px;
+border: 2px solid var(--error-default, #F17228);
+background: navajowhite;
+color: var(--error-default, #F17228);
+text-align: center;
+margin-top: 10px;
+margin-bottom: 18px;
+
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 20px; /* 142.857% */
+letter-spacing: 0.3px;
+}
+
+.shopcart_quantity{
+  margin: 1px 1px;
+
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+
+  height: 25px;
+  width: 25px;
+  border: 1px solid var(--error-default, #EDEEF2);
+  border-radius: 5px;
+  flex-shrink: 0;
+  background: transparent;
+  flex-direction: row;
+  text-align: center;
+
+  color: aliceblue;
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+}
+
+
+
+.order_box{
+  width: 570px;
+  height: 40px;
+  flex-shrink: 0;
+  background: white;
+  display: flex;
+  flex-direction: row;
+  padding-left: 12px;
+  }
+
+
+.order_box_left{
+  width: 570px;
+  height: 130px;
+  flex-shrink: 0;
+  background: white;
+  display: flex;
+  flex-direction: row;
+  padding-left: 12px;
+}
+
+  .order_name_box{
+    width: 570px;
+    height: 40px;
+    flex-shrink: 0;
+    background: white;
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 12px;
+    text-align: center;
+    flex-direction: column;
+    float: left;
+    margin-left: 300px;
+    }
+
+
+
+  .order_text{
+    font-size: 16px;
+    color: #424242;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 4px;
+    font-weight: 300;
+    line-height: 16px; /* 133.333% */
+  }
+
+.order_container{
+  flex-direction: column;
+  float: left;
+  width: 40%;
+  margin-left: 300px;
+}
+
+  /*
+  
+  url(C:\Users\Admin\Desktop\handrawn-barbecue-elements.jpg)
+     
+
+  -----------------------------Slider section styles
+  .slider {
+    background-color: #0099cc;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .slider h2 {
+    font-size: 28px;
+  }
+ 
+  .category-box {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    margin: 20px;
+    padding: 10px;
+  }
+  
+  .category-box h3 {
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .element-box {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    margin: 20px;
+    padding: 10px;
+  }
+  
+  .element-box h4 {
+    font-size: 16px;
+    color: #333;
+  }
+ 
+  .footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .footer p {
+    font-size: 14px;
+  }
+  
+  */
+  
